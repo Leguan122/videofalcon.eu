@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        @vite('resources/css/app.css')
 
         <title>Falcon</title>
 
@@ -20,7 +21,12 @@
             }
         </style>
     </head>
-    <body class="antialiased">
-    <img src="{{ url('public/Image/background.jpg') }}" style="height: 100px; width: 150px;">
+    <body class="">
+    <div class="w-full min-h-screen max-h-screen bg-stone-900">
+        <h1 class="text-center text-white">Site under construction</h1>
+        <img src="{{ url('Image/background.jpg') }}" class="object-cover">
+    </div >
+
+
     </body>
 </html>
