@@ -1,7 +1,7 @@
-<div class="flex flex-row justify-between bg-black">
+<div class="flex flex-row justify-between bg-black ">
     <div>
         <a href="/">
-            <img src="{{ url('Image/background.jpg') }}" class="h-24 ml-3 object-contain">
+            <img src="{{ url('Image/background16-9.webp') }}" class="min-w-128 h-20 ml-3 object-none">
         </a>
     </div>
 
@@ -32,9 +32,9 @@
 
     <div >
         <ul class="flex flex-row text-white h-full mr-3">
-            <li class="mx-2 flex items-center justify-center"><a href="/" class="">Referencie</a></li>
+            <li class="mx-2 flex items-center justify-center"><a href="/references" class="">Referencie</a></li>
             <li class="mx-2 flex items-center justify-center whitespace-nowrap"><a href="/aboutme" class="">O mne</a></li>
-            <li class="mx-2 flex items-center justify-center">Kontakt</li>
+            <li class="mx-2 flex items-center justify-center"><a href="/contact">Kontakt</a></li>
         </ul>
     </div>
 </div>

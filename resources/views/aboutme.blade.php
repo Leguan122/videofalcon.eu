@@ -16,9 +16,10 @@
                 font-family: 'Nunito', sans-serif;
             }
         </style>
+        <link rel="icon" href="{{ url('Image/favicon.webp') }}">
     </head>
     <header>
-        <div class="w-full max-h-36 absolute">
+        <div class="min-w-full max-h-36 absolute">
 {{--            <h1 class="text-center">Site under construction</h1>--}}
             @include('Layouts.menu')
         </div>
@@ -26,8 +27,8 @@
 
     <body>
 
-    <div class="min-h-screen bg-stone-900 grid place-items-center">
-        <div class="max-w-md mx-auto bg-stone-800 rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+    <div class="min-w-max min-h-screen bg-stone-900 grid place-items-center">
+        <div class="max-w-md mx-auto bg-stone-800 rounded-xl shadow-md overflow-hidden md:max-w-2xl mt-24">
             <div class="md:flex">
                 <div class="md:shrink-0">
                     <img class="h-48 w-full object-cover md:h-full md:w-48" src="https://scontent.fbts10-1.fna.fbcdn.net/v/t39.30808-6/243296131_4718820091475311_1175966634603051494_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=174925&_nc_ohc=QMFIPX2aHiwAX89Lgav&tn=JsM3Gb2Q2bcBYSG0&_nc_ht=scontent.fbts10-1.fna&oh=00_AfCd_BAVbf2k1lWO8W66isrMYYBmbAIvjp5GrpuQTIQCuw&oe=6385AC16" alt="Modern building architecture">
