@@ -13,7 +13,7 @@
         <link rel="icon" href="{{ url('Image/favicon.webp') }}">
     </head>
     <header>
-        <div class="w-full max-h-20">
+        <div class="min-w-full max-h-20">
 {{--            <h1 class="text-center">Site under construction</h1>--}}
             @include('Layouts.menu')
         </div>
@@ -27,10 +27,10 @@
                     <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
                         @foreach($videos as $video)
 
-                                <iframe class="w-96 mt-1 ml-1" src="{{$video->url}}" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <iframe class=" mt-1 ml-1" src="{{$video->url}}" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
                         @endforeach
-                            <iframe width="560" height="315" src="https://youtu.be/LJwszlzvErU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                    </div>
+{{--                            <iframe width="560" height="315" src="https://youtu.be/LJwszlzvErU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                    </div>--}}
                 </div>
             </div>
         </div>

@@ -19,7 +19,7 @@
     <link rel="icon" href="{{ url('Image/favicon.webp') }}">
 </head>
 <header>
-    <div class="min-w-full max-h-36 absolute">
+    <div class="min-w-full max-h-22 absolute">
         {{--            <h1 class="text-center">Site under construction</h1>--}}
         @include('Layouts.menu')
     </div>

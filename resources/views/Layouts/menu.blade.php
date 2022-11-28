@@ -1,5 +1,5 @@
 <div class="flex flex-row justify-between bg-black ">
-    <div>
+    <div class="min-w-128">
         <a href="/">
             <img src="{{ url('Image/background16-9.webp') }}" class="min-w-128 h-20 ml-3 object-none">
         </a>
