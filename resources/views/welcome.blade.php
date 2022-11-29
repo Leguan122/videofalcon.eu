@@ -3,23 +3,24 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
         @vite('resources/css/app.css')
 
+        @vite('resources/js/menu.js')
+
         <title>Falcon</title>
-
-        <!-- Fonts -->
-        <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-
-        <link rel="icon" href="{{ url('Image/favicon.webp') }}">
     </head>
+
+
+    <body class="">
     <header>
         <div class="min-w-full max-h-20">
-{{--            <h1 class="text-center">Site under construction</h1>--}}
+            {{--            <h1 class="text-center">Site under construction</h1>--}}
             @include('Layouts.menu')
         </div>
     </header>
-
-    <body class="">
     <div class="min-w-max min-h-screen bg-stone-900 grid place-items-center">
         <div class="min-w-full mx-12 bg-stone-800 rounded-xl shadow-md overflow-hidden md:max-w-2xl mt-24 sm:mx-2">
             <div class="md:flex">
@@ -35,12 +36,13 @@
             </div>
         </div>
     </div>
+        <footer>
+            <div class="w-full max-h-20">
+                {{--            <h1 class="text-center">Site under construction</h1>--}}
+                @include('Layouts.footer')
+            </div>
+        </footer>
     </body>
 
-    <footer>
-        <div class="w-full max-h-20">
-            {{--            <h1 class="text-center">Site under construction</h1>--}}
-            @include('Layouts.footer')
-        </div>
-    </footer>
+
 </html>

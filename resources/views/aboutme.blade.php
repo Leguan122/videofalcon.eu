@@ -3,35 +3,30 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
         @vite('resources/css/app.css')
 
+        @vite('resources/js/menu.js')
+
         <title>Falcon</title>
-
-        <!-- Fonts -->
-        <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-
-        <!-- Styles -->
-        <style>
-            body {
-                font-family: 'Nunito', sans-serif;
-            }
-        </style>
-        <link rel="icon" href="{{ url('Image/favicon.webp') }}">
     </head>
-    <header>
-        <div class="min-w-full max-h-36 absolute">
-{{--            <h1 class="text-center">Site under construction</h1>--}}
-            @include('Layouts.menu')
-        </div>
-    </header>
 
-    <body>
 
-    <div class="min-w-max min-h-screen bg-stone-900 grid place-items-center">
+    <body class="">
+        <header>
+            <div class="w-screen h-20 absolute">
+                {{--            <h1 class="text-center">Site under construction</h1>--}}
+                @include('Layouts.menu')
+            </div>
+        </header>
+
+    <div class=" min-h-screen bg-stone-900 grid place-items-center">
         <div class="max-w-md mx-auto bg-stone-800 rounded-xl shadow-md overflow-hidden md:max-w-2xl mt-24">
             <div class="md:flex">
                 <div class="md:shrink-0">
-                    <img class="h-48 w-full object-cover md:h-full md:w-48" src="https://scontent.fbts10-1.fna.fbcdn.net/v/t39.30808-6/243296131_4718820091475311_1175966634603051494_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=174925&_nc_ohc=QMFIPX2aHiwAX89Lgav&tn=JsM3Gb2Q2bcBYSG0&_nc_ht=scontent.fbts10-1.fna&oh=00_AfCd_BAVbf2k1lWO8W66isrMYYBmbAIvjp5GrpuQTIQCuw&oe=6385AC16" alt="Modern building architecture">
+                    <img class="h-48 w-full object-cover md:h-full md:w-48" src="{{ url('Image/profilovka.webp') }}" alt="Profile photo">
                 </div>
                 <div class="p-8">
                     <div class="uppercase tracking-wide text-sm text-white font-semibold">O mne</div>
@@ -43,5 +38,11 @@
         </div>
     </div>
 
+        <footer>
+            <div class="w-full max-h-20">
+                {{--            <h1 class="text-center">Site under construction</h1>--}}
+                @include('Layouts.footer')
+            </div>
+        </footer>
     </body>
 </html>
