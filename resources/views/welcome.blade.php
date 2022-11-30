@@ -14,28 +14,39 @@
     </head>
 
 
-    <body class="">
+    <body class="bg-stone-900">
     <header>
         <div class="min-w-full max-h-20">
             {{--            <h1 class="text-center">Site under construction</h1>--}}
             @include('Layouts.menu')
         </div>
     </header>
-    <div class="min-w-max min-h-screen bg-stone-900 grid place-items-center">
-        <div class="min-w-full mx-12 bg-stone-800 rounded-xl shadow-md overflow-hidden md:max-w-2xl mt-24 sm:mx-2">
-            <div class="md:flex">
-                <div class="p-8">
-                    <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-                        @foreach($videos as $video)
 
-                                <iframe class=" mt-1 ml-1" src="{{$video->url}}" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div>
+        <iframe class="hidden sm:block w-full h-screen"  src="https://www.youtube.com/embed/3R4NcDzF1NQ?controls=0autoplay=1&mute=1&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+    </div>
 
-                        @endforeach
-{{--                            <iframe width="560" height="315" src="https://youtu.be/LJwszlzvErU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                    </div>--}}
+    <div class="md:m-8 py-8 w-full-[16] min-h-screen bg-stone-800  rounded-lg">
+        <div class="w-full h-full grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 place-items-center">
+            @foreach($videos as $video)
+                <div class="bg-black rounded-lg p-1 shadow-md shadow-white hover:shadow-xl hover:shadow-white duration-150 hover:scale-110">
+{{--                    <iframe class="" src="{{$video->url}}" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>--}}
+                    <button id="{{$video[0]}}" class="show_video">
+                        <img src="{{ url('Image/JankaMartin.webp') }}">
+                        <p class="text-white text-center">{{$video[1]}}</p>
+                </button>
                 </div>
-            </div>
+            @endforeach
+            {{--                            <iframe width="560" height="315" src="https://youtu.be/LJwszlzvErU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                    </div>--}}
         </div>
     </div>
+
+    <div id="popup" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 p-4 w-full md:inset-0 h-full grid place-items-center">
+        <div class="w-9/12 h-5/6">
+            <iframe id="youtube" class="w-full h-full" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                    </div>
+        </div>
+    </div>
+
         <footer>
             <div class="w-full max-h-20">
                 {{--            <h1 class="text-center">Site under construction</h1>--}}

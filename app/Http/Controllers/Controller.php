@@ -22,6 +22,11 @@ class Controller extends BaseController
 
     public function references() {
         $videos = Video_url::all();
+        $videos = [
+            ["https://www.youtube.com/embed/3R4NcDzF1NQ", "Janka & Martin"],
+            ["https://www.youtube.com/embed/LJwszlzvErU", "Katka & Michal"],
+            ["https://www.youtube.com/embed/77pjs5BoC7Q", "Lenka & Marek"]
+        ];
 //        dd($videos);
 //        return view('welcome')->with($videos);
         return view('welcome',['videos' => $videos]);

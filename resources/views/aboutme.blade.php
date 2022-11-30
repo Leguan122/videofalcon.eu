@@ -16,7 +16,7 @@
 
     <body class="">
         <header>
-            <div class="w-screen h-20 absolute">
+            <div class="w-full h-20 absolute">
                 {{--            <h1 class="text-center">Site under construction</h1>--}}
                 @include('Layouts.menu')
             </div>
