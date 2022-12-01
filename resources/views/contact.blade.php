@@ -62,7 +62,7 @@
                         <img class="h-48 w-full object-cover md:h-full md:w-48 pb-8 md:pb-0" src="{{ url('Image/profilovka.webp') }}" alt="Profile photo">
                     </div>
                     <div class="border-2 p-4">
-                        <form method="post" action="/contact">
+                        <form id="msg-form" method="post" action="/contact">
 
 
                             <div class="grid grid-cols-1 lg:grid-cols-2">
