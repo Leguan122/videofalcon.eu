@@ -18,3 +18,5 @@ Route::get('/',[Controller::class, 'references']);
 Route::get('/references', [Controller::class, 'references']);
 Route::get('/aboutme', [Controller::class, 'aboutme']);
 Route::get('/contact',[Controller::class, 'contact']);
+
+Route::post('/contact', [Controller::class, 'sendingMsg']);

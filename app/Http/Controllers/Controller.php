@@ -7,6 +7,7 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
+use Illuminate\Http\Request;
 
 class Controller extends BaseController
 {
@@ -34,5 +35,9 @@ class Controller extends BaseController
 //        dd($videos);
 //        return view('welcome')->with($videos);
         return view('welcome',['videos' => $videos]);
+    }
+
+    public function sendingMsg(Request $request) {
+        dd($request);
     }
 }
