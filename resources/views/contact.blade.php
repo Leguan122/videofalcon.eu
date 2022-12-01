@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
     @vite('resources/css/app.css')
 
     @vite('resources/js/menu.js')
 
-    @vite('resources/js/form.js')
+{{--    @vite('resources/js/form.js')--}}
 
     <title>Falcon</title>
 </head>
@@ -62,6 +62,7 @@
                         <img class="h-48 w-full object-cover md:h-full md:w-48 pb-8 md:pb-0" src="{{ url('Image/profilovka.webp') }}" alt="Profile photo">
                     </div>
                     <div class="border-2 p-4">
+
                         <form id="msg-form" method="POST" action="/contact">
 
 
@@ -72,10 +73,8 @@
 
                             <textarea class="w-full h-24 mb-1 p-1" placeholder="Vaša správa *" name="msg"></textarea><br>
 
-
-                                <button id="sendMsg" class="g-recaptcha bg-white p-1 rounded-lg hover:bg-slate-200"  data-sitekey="6LfBjkkjAAAAALOq-MFLU6gwBA1BReKFJ8AAC9DG"
-                                        data-callback='onSubmit'
-                                        data-action='submit'>Odoslať </button>
+                            <div class="g-recaptcha" data-sitekey="6LeV-kkjAAAAALNaBnclCOanrNoERuRSvvp1CrhB"></div>
+                                <button id="sendMsg" class="bg-white p-1 rounded-lg hover:bg-slate-200">Odoslať </button>
                         </form>
                     </div>
                 </div>

@@ -8,6 +8,7 @@ use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Http\Request;
+use TimeHunter\LaravelGoogleReCaptchaV3\GoogleReCaptchaV3;
 
 class Controller extends BaseController
 {
@@ -38,6 +39,6 @@ class Controller extends BaseController
     }
 
     public function sendingMsg(Request $request) {
-        dd($request);
+        dd(1);
     }
 }
