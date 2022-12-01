@@ -74,7 +74,7 @@
 
 
                                 <button id="sendMsg" class="g-recaptcha bg-white p-1 rounded-lg hover:bg-slate-200"  data-sitekey="6LfBjkkjAAAAALOq-MFLU6gwBA1BReKFJ8AAC9DG"
-                                        data-callback='onSubmit()'
+                                        data-callback='onSubmit'
                                         data-action='submit'>Odoslať </button>
                         </form>
                     </div>
