@@ -14,9 +14,9 @@
     </head>
 
 
-    <body class="">
+    <body class="bg-stone-900">
         <header>
-            <div class="w-full h-20 absolute">
+            <div class="w-full h-14 absolute">
                 {{--            <h1 class="text-center">Site under construction</h1>--}}
                 @include('Layouts.menu')
             </div>

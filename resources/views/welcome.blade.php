@@ -16,7 +16,7 @@
 
     <body class="bg-stone-900">
     <header>
-        <div class="min-w-full max-h-20">
+        <div class="min-w-full h-14">
             {{--            <h1 class="text-center">Site under construction</h1>--}}
             @include('Layouts.menu')
         </div>
@@ -29,7 +29,7 @@
     <div class="md:m-8 py-8 w-full-[16] min-h-screen bg-stone-800  rounded-lg">
         <div class="w-full h-full grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 place-items-center">
             @foreach($videos as $video)
-                <div class="bg-black rounded-lg p-1 shadow-md shadow-white hover:shadow-xl hover:shadow-white duration-150 hover:scale-110">
+                <div class="bg-black rounded-lg m-4 shadow-md shadow-white hover:shadow-xl hover:shadow-white duration-150 hover:scale-110">
 {{--                    <iframe class="" src="{{$video->url}}" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>--}}
                     <button id="{{$video[0]}}" class="show_video">
                         <img src="{{ url('Image/JankaMartin.webp') }}">
@@ -43,7 +43,7 @@
 
     <div id="popup" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 p-4 w-full md:inset-0 h-full grid place-items-center">
         <div class="w-9/12 h-5/6">
-            <iframe id="youtube" class="w-full h-full" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                    </div>
+            <iframe id="youtube" class="w-full h-full" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </div>
 

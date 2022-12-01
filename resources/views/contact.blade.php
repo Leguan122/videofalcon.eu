@@ -5,21 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
 
     @vite('resources/css/app.css')
 
     @vite('resources/js/menu.js')
 
+    @vite('resources/js/form.js')
+
     <title>Falcon</title>
 </head>
-<header >
-    <div class="min-w-full max-h-22 absolute">
-        {{--            <h1 class="text-center">Site under construction</h1>--}}
-        @include('Layouts.menu')
-    </div>
-</header>
+
 
 <body class="bg-stone-900">
+    <header >
+        <div class="min-w-full h-14 absolute">
+            {{--            <h1 class="text-center">Site under construction</h1>--}}
+            @include('Layouts.menu')
+        </div>
+    </header>
     <div>
         <div class="flex flex-col py-20">
             <div class="mb-20">
@@ -57,11 +61,21 @@
                     <div>
                         <img class="h-48 w-full object-cover md:h-full md:w-48 pb-8 md:pb-0" src="{{ url('Image/profilovka.webp') }}" alt="Profile photo">
                     </div>
-                    <div>
-                        <form>
-                            <input class="w-full mb-2 p-1" type="text" name="name" placeholder="Meno *"><br>
+                    <div class="border-2 p-4">
+                        <form method="post" action="/contact">
+
+
+                            <div class="grid grid-cols-1 lg:grid-cols-2">
+                                <input class="w-full lg:w-4/5 mb-2 p-1" type="text" name="name" placeholder="Meno *">
+                                <input class="w-full mb-2 p-1" type="email" name="email" placeholder="Email *"><br>
+                            </div>
+
                             <textarea class="w-full h-24 mb-1 p-1" placeholder="Vaša správa *" name="msg"></textarea><br>
-                            <button class="bg-white p-1 rounded-lg hover:bg-slate-200">Submit</button>
+
+
+                                <button id="sendMsg" class="g-recaptcha bg-white p-1 rounded-lg hover:bg-slate-200"  data-sitekey="6LfBjkkjAAAAALOq-MFLU6gwBA1BReKFJ8AAC9DG"
+                                        data-callback='onSubmit'
+                                        data-action='submit'>Odoslať </button>
                         </form>
                     </div>
                 </div>
