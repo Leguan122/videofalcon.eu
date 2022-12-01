@@ -39,7 +39,7 @@ class Controller extends BaseController
     }
 
     public function sendingMsg(Request $request) {
-        dd($request);
-        return view('aboutme');
+//        dd($request);
+        return view('contact');
     }
 }

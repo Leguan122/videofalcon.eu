@@ -64,17 +64,29 @@
                     <div class="border-2 p-4">
                         <form id="msg-form" action="/contact" method="post">
                             @csrf
-                            <div class="grid grid-cols-1 lg:grid-cols-2">
-                                <input id="input_name" class="w-full lg:w-4/5 mb-2 p-1" type="text" name="name" placeholder="Meno *">
-                                <input id="input_email" class="w-full mb-2 p-1" type="email" name="email" placeholder="Email *"><br>
+                            <div class="flex flex-col lg:flex-row justify-between">
+
+                                <div class="flex flex-col w-full lg:w-2/5">
+                                    <label class=" text-red-600" for="input_name"> *Meno nesmie byť prázdne</label>
+                                    <input id="input_name" class="w-full p-1" type="text" name="name" placeholder="Meno *">
+                                </div>
+
+                                <div class="flex flex-col w-full lg:w-1/2">
+                                    <label class=" text-red-600" for="input_email"> *Email nesmie byť prázdny</label>
+                                    <input id="input_email" class="w-full p-1" type="email" name="email" placeholder="Email *">
+                                </div>
+
+
                             </div>
 
+                            <label class="invisible text-red-600" for="input_msg"> *Správa nesmie byť prázdna</label>
                             <textarea id="input_msg" class="w-full h-24 mb-1 p-1" placeholder="Vaša správa *" name="msg"></textarea><br>
 
 
-                            <button  id="sendMsg" class="g-recaptcha bg-white p-1 rounded-lg hover:bg-slate-200" data-sitekey="6LfBjkkjAAAAALOq-MFLU6gwBA1BReKFJ8AAC9DG"
+                            <button onclick="onSubmit()" id="sendMsg" class="g-recaptcha bg-white p-1 rounded-lg hover:bg-slate-200" data-sitekey="6LfBjkkjAAAAALOq-MFLU6gwBA1BReKFJ8AAC9DG"
                                     data-callback='onSubmit'
-                                    data-action='submit'>Odoslať </button>
+                                    data-action='submit'
+                                    data-error-callback='captchaError' >Odoslať </button>
                         </form>
                     </div>
                 </div>
