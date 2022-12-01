@@ -1,4 +1,4 @@
-window.onSubmit = onSubmit();
+window.onSubmit = onSubmit;
 
 function onSubmit(token) {
     console.log("sefsefsef");
