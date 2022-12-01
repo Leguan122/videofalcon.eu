@@ -62,7 +62,7 @@
                         <img class="h-48 w-full object-cover md:h-full md:w-48 pb-8 md:pb-0" src="{{ url('Image/profilovka.webp') }}" alt="Profile photo">
                     </div>
                     <div class="border-2 p-4">
-                        <form id="msg-form" method="post" action="/contact">
+                        <form id="msg-form" method="POST" action="/contact">
 
 
                             <div class="grid grid-cols-1 lg:grid-cols-2">
@@ -74,7 +74,7 @@
 
 
                                 <button id="sendMsg" class="g-recaptcha bg-white p-1 rounded-lg hover:bg-slate-200"  data-sitekey="6LfBjkkjAAAAALOq-MFLU6gwBA1BReKFJ8AAC9DG"
-                                        data-callback='onSubmit'
+                                        data-callback='onSubmit()'
                                         data-action='submit'>Odoslať </button>
                         </form>
                     </div>
