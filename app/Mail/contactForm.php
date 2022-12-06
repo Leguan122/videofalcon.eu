@@ -4,7 +4,9 @@ namespace App\Mail;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
+use Illuminate\Http\Request;
 use Illuminate\Mail\Mailable;
+use Illuminate\Mail\Mailables\Address;
 use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
@@ -13,14 +15,16 @@ class contactForm extends Mailable
 {
     use Queueable, SerializesModels;
 
+    public $request;
+
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct(Request $request)
     {
-        //
+        $this->request = $request;
     }
 
     /**
@@ -31,6 +35,7 @@ class contactForm extends Mailable
     public function envelope()
     {
         return new Envelope(
+            from: new Address('form@videofalcon.eu', 'App'),
             subject: 'Contact Form',
         );
     }
@@ -43,7 +48,7 @@ class contactForm extends Mailable
     public function content()
     {
         return new Content(
-            view: 'view.name',
+            view: 'emails.form',
         );
     }
 

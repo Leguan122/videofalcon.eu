@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/email',[Controller::class, 'email']);
 
 Route::get('/',[Controller::class, 'references']);
 Route::get('/references', [Controller::class, 'references']);
