@@ -85,12 +85,12 @@
                             <textarea id="input_msg" class="w-full h-24 mb-1 p-1 rounded" placeholder="Vaša správa *" name="msg"></textarea><br>
 
 
-                            <button onclick="onSubmit()" id="sendMsg" class="g-recaptcha bg-white p-1 rounded-lg hover:bg-slate-200" data-sitekey="6LfBjkkjAAAAALOq-MFLU6gwBA1BReKFJ8AAC9DG"
+                            <button id="sendMsg" class="g-recaptcha bg-white p-1 rounded-lg hover:bg-slate-200" data-sitekey="6LfBjkkjAAAAALOq-MFLU6gwBA1BReKFJ8AAC9DG"
                                     data-callback='onSubmit'
                                     data-action='submit'
                                     data-error-callback='captchaError' >Odoslať </button>
                         </form>
-                        {!!  GoogleReCaptchaV3::renderOne('input_name','input_email','input_msg') !!}
+
                     </div>
                 </div>
             </div>

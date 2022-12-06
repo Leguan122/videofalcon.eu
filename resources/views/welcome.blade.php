@@ -24,9 +24,14 @@
         </div>
     </header>
 
-    <div>
-        <iframe class="hidden sm:block w-full h-screen"  src="https://www.youtube.com/embed/3R4NcDzF1NQ?controls=0autoplay=1&mute=1&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
-    </div>
+    <video class="hidden sm:block w-full " autoplay loop preload="true">
+        <source src="{{ url('Video/Intro.mp4') }}" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+    </video>
+{{--    <div>--}}
+{{--        <iframe class="hidden sm:block w-full h-screen"  src="https://www.youtube.com/embed/3R4NcDzF1NQ?controls=0autoplay=1&mute=1&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>--}}
+{{--    </div>--}}
 
     <div class="md:m-8 py-8 w-full-[16] min-h-screen bg-stone-800  rounded-lg">
         <div class="w-full h-full grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 place-items-center">
