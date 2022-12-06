@@ -90,6 +90,7 @@
                                     data-action='submit'
                                     data-error-callback='captchaError' >Odoslať </button>
                         </form>
+                        {!!  GoogleReCaptchaV3::renderOne('input_name','input_email','input_msg') !!}
                     </div>
                 </div>
             </div>

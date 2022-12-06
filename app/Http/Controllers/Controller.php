@@ -40,6 +40,7 @@ class Controller extends BaseController
 
     public function sendingMsg(Request $request) {
 //        dd($request);
+//        $msg =  GoogleReCaptchaV3::verifyResponse($request->token,$request->getClientIp())->getAction();
         return view('contact');
     }
 }
