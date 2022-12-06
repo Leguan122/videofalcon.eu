@@ -8,7 +8,11 @@ module.exports = {
   theme: {
     extend: {
         colors: {
-            'modern-black': '#181c21'
+            'modern-black': '#181c21',
+            'modern-bg':    '#525f70'
+        },
+        fontFamily: {
+            'nunito': ['Nunito']
         }
     },
   },

@@ -4,17 +4,19 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
         @vite('resources/css/app.css')
 
         @vite('resources/js/menu.js')
 
-        <title>Falcon</title>
+        <title>Falcon video production</title>
     </head>
 
 
-    <body class="bg-stone-900">
+    <body class="bg-stone-900 font-nunito">
         <header>
             <div class="w-full h-14 absolute">
                 {{--            <h1 class="text-center">Site under construction</h1>--}}
@@ -22,7 +24,7 @@
             </div>
         </header>
 
-    <div class=" min-h-screen bg-stone-900 grid place-items-center">
+    <div class=" min-h-screen grid place-items-center">
         <div class="max-w-md mx-auto bg-stone-800 rounded-xl shadow-md overflow-hidden md:max-w-2xl mt-24">
             <div class="md:flex">
                 <div class="md:shrink-0">

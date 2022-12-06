@@ -13,11 +13,11 @@
 
     @vite('resources/js/form.js')
 
-    <title>Falcon</title>
+    <title>Falcon video production</title>
 </head>
 
 
-<body class="bg-stone-900">
+<body class="bg-stone-900 font-nunito">
     <header >
         <div class="min-w-full h-14 absolute">
             {{--            <h1 class="text-center">Site under construction</h1>--}}
