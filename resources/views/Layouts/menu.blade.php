@@ -34,7 +34,7 @@
 
     <div class="hidden sm:block lg:mr-16 font-bold">
         <ul class="flex flex-row text-white h-full mr-3">
-            <li class="mx-2 flex items-center justify-center"><a href="/references" class="font-nunito">Referencie</a></li>
+            <li class="mx-2 flex items-center justify-center hover:text-stone-400"><a href="/references" class="font-nunito">Referencie</a></li>
             <li class="mx-2 flex items-center justify-center whitespace-nowrap"><a href="/aboutme" class="">O mne</a></li>
             <li class="mx-2 flex items-center justify-center"><a href="/contact">Kontakt</a></li>
         </ul>
