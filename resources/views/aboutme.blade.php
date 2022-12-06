@@ -18,7 +18,7 @@
 
     <body class="bg-stone-900 font-nunito">
         <header>
-            <div class="w-full h-14 absolute">
+            <div class="w-full h-16 absolute">
                 {{--            <h1 class="text-center">Site under construction</h1>--}}
                 @include('Layouts.menu')
             </div>

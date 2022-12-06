@@ -3,17 +3,25 @@ window.captchaError = captchaError;
 
 function onSubmit(token) {
 
-    if (document.getElementById("input_name").value === "" || document.getElementById("input_email").value === "" || document.getElementById("input_msg").value === ""){
+    if ($('#input_name').val() == "") {
+        $("#warn_name").removeClass('invisible');
+    }else {
+        $("#warn_name").addClass('invisible');
+    }
+    if ($('#input_email').val() == "") {
+        $("#warn_email").removeClass('invisible');
+    }else {
+        $("#warn_email").addClass('invisible');
+    }
+    if ($('#input_msg').val() == "") {
+        $("#warn_msg").removeClass('invisible');
+    }else {
+        $("#warn_msg").addClass('invisible');
+    }
 
-        if (document.getElementById("input_name").value === "") {
-
-        }
-        if (document.getElementById("input_email").value === "") {
-
-        }
-
-
+    if ($('#input_name').val() == "" || document.getElementById("input_email").value === "" || document.getElementById("input_msg").value === ""){
     } else {
+        console.log("Sending");
         document.getElementById("msg-form").submit();
     }
 }
@@ -21,9 +29,3 @@ function onSubmit(token) {
 function captchaError(e) {
     console.log(e);
 }
-
-
-
-$("#sendMsg").click(function () {
-    console.log("aaaa");
-});

@@ -4,6 +4,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
         @vite('resources/css/app.css')
@@ -16,7 +18,7 @@
 
     <body class="bg-stone-900 font-nunito">
     <header>
-        <div class="min-w-full h-14">
+        <div class="min-w-full h-16 ">
             {{--            <h1 class="text-center">Site under construction</h1>--}}
             @include('Layouts.menu')
         </div>
