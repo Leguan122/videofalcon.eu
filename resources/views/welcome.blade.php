@@ -39,7 +39,7 @@
                 <div class="bg-black rounded-lg m-4 shadow-md shadow-white hover:shadow-xl hover:shadow-white duration-150 hover:scale-110">
 {{--                    <iframe class="" src="{{$video->url}}" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>--}}
                     <button id="{{$video[0]}}" class="show_video">
-                        <img src="{{ url('Image/JankaMartin.webp') }}">
+                        <img src="{{ url('Image/JankaMartin.webp') }}" alt="=Uvodný obrázok videa: {{$video[1]}}">
                         <p class="text-white text-center">{{$video[1]}}</p>
                 </button>
                 </div>

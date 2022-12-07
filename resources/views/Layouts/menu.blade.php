@@ -1,13 +1,13 @@
 <div class="flex flex-row justify-between bg-modern-black h-16 w-full fixed z-50">
     <div class="flex items-center justify-center lg:ml-16">
         <a href="/" class="">
-            <img src="{{ url('Image/background16-9.webp') }}" class="hidden sm:block ml-3 h-16">
-            <img src="{{ url('Image/logo.webp') }}" class="block sm:hidden ml-3">
+            <img src="{{ url('Image/background16-9.webp') }}" class="hidden sm:block ml-3 h-16 mr-32" alt="Firemné logo Falcon video production s názvom 'FALCON' a hlavou orla">
+            <img src="{{ url('Image/logo.webp') }}" class="block sm:hidden ml-3" alt="Firemné logo Falcon video production. Hlava orla">
 {{--            <p class="absolute">esfsefsefse</p>--}}
         </a>
     </div>
 
-    <div >
+    <div>
         <ul class="flex flex-row text-white h-full mr-3">
 {{--            FACEBOOK--}}
             <li class="mx-2 flex items-center justify-center">
@@ -35,6 +35,7 @@
     <div class="hidden sm:block lg:mr-16 font-bold">
         <ul class="flex flex-row text-white h-full mr-3">
             <li class="mx-2 flex items-center justify-center "><a href="/references" class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-100 hover:text-zinc-200">Referencie</a></li>
+            <li class="mx-2 flex items-center justify-center "><a href="/catalog" class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-100 hover:text-zinc-200">Služby</a></li>
             <li class="mx-2 flex items-center justify-center whitespace-nowrap"><a href="/aboutme" class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-100 hover:text-zinc-200">O mne</a></li>
             <li class="mx-2 flex items-center justify-center"><a href="/contact" class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-100 hover:text-zinc-200">Kontakt</a></li>
         </ul>
@@ -42,13 +43,16 @@
 
     <div class="block sm:hidden flex items-center justify-center mr-3">
 
-        <button id="dropdownDefault" data-dropdown-toggle="dropdown" class="text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">         <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none"><path d="M24 0v24H0V0h24ZM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018Zm.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="white" d="M20 17.5a1.5 1.5 0 0 1 .144 2.993L20 20.5H4a1.5 1.5 0 0 1-.144-2.993L4 17.5h16Zm0-7a1.5 1.5 0 0 1 0 3H4a1.5 1.5 0 0 1 0-3h16Zm0-7a1.5 1.5 0 0 1 0 3H4a1.5 1.5 0 1 1 0-3h16Z"/></g></svg>
+        <button id="dropdownDefault" data-dropdown-toggle="dropdown" name="Zobraziť menu" class="text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">         <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none"><path d="M24 0v24H0V0h24ZM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018Zm.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="white" d="M20 17.5a1.5 1.5 0 0 1 .144 2.993L20 20.5H4a1.5 1.5 0 0 1-.144-2.993L4 17.5h16Zm0-7a1.5 1.5 0 0 1 0 3H4a1.5 1.5 0 0 1 0-3h16Zm0-7a1.5 1.5 0 0 1 0 3H4a1.5 1.5 0 1 1 0-3h16Z"/></g></svg>
         </button>
         <!-- Dropdown menu -->
         <div id="dropdown" class="hidden z-10 w-screen right-0 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 top-20 absolute font-bold">
             <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefault">
                 <li>
                     <a href="/references" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Referencie</a>
+                </li>
+                <li>
+                    <a href="/catalog" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Služby</a>
                 </li>
                 <li>
                     <a href="/aboutme" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">O mne</a>
