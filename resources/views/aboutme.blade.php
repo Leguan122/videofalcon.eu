@@ -5,7 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Falcon video production. Vytvorím Vám svadobný klip, svadobné video, prípadne reklamu. Mesto kde žijem je Banská Bystrica. Na tejto stránke sa dozviete viac o mne.">
 
+        <link rel="apple-touch-icon" sizes="180x180" href="{{ url('favicon.png') }}">
+        <link rel="shortcut icon" href="{{ url('favicon.ico') }}" type="image/x-icon">
+
         <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+
+
+        <link rel="shortcut icon" href="{{ url('favicoawdn.ico') }}" type="image/x-icon">
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 

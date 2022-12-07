@@ -3,7 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Falcon video production. Vytvorím Vám svadobný klip, svadobné video, prípadne reklamu. Mesto kde žijem je Banská Bystrica. Na tejto stránke ma môžete kontaktovať>
+    <meta name="description" content="Falcon video production. Vytvorím Vám svadobný klip, svadobné video, prípadne reklamu. Mesto kde žijem je Banská Bystrica. Na tejto stránke ma môžete kontaktovať">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url('favicon.png') }}">
+    <link rel="shortcut icon" href="{{ url('favicon.ico') }}" type="image/x-icon">
 
     <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
 
