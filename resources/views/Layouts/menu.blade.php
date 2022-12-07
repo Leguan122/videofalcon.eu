@@ -1,4 +1,4 @@
-<div class="flex flex-row justify-between bg-modern-black h-16 w-full fixed">
+<div class="flex flex-row justify-between bg-modern-black h-16 w-full fixed z-50">
     <div class="flex items-center justify-center lg:ml-16">
         <a href="/" class="">
             <img src="{{ url('Image/background16-9.webp') }}" class="hidden sm:block ml-3 h-16">
@@ -34,9 +34,9 @@
 
     <div class="hidden sm:block lg:mr-16 font-bold">
         <ul class="flex flex-row text-white h-full mr-3">
-            <li class="mx-2 flex items-center justify-center hover:text-stone-400"><a href="/references" class="font-nunito">Referencie</a></li>
-            <li class="mx-2 flex items-center justify-center whitespace-nowrap"><a href="/aboutme" class="">O mne</a></li>
-            <li class="mx-2 flex items-center justify-center"><a href="/contact">Kontakt</a></li>
+            <li class="mx-2 flex items-center justify-center "><a href="/references" class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-100 hover:text-zinc-200">Referencie</a></li>
+            <li class="mx-2 flex items-center justify-center whitespace-nowrap"><a href="/aboutme" class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-100 hover:text-zinc-200">O mne</a></li>
+            <li class="mx-2 flex items-center justify-center"><a href="/contact" class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-100 hover:text-zinc-200">Kontakt</a></li>
         </ul>
     </div>
 

@@ -24,7 +24,7 @@
             </div>
         </header>
 
-    <div class=" min-h-screen grid place-items-center">
+    <div class=" min-h-[calc(100vh-24px)] grid place-items-center">
         <div class="max-w-md mx-auto bg-stone-800 rounded-xl shadow-md overflow-hidden md:max-w-2xl mt-24">
             <div class="md:flex">
                 <div class="md:shrink-0">

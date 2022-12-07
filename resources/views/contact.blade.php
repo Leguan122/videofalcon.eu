@@ -26,7 +26,7 @@
             @include('Layouts.menu')
         </div>
     </header>
-    <div>
+    <div class="min-h-[calc(100vh-24px)]">
         <div class="flex flex-col py-20">
             <div class="mb-20">
                 <h1 class="text-white text-center font-mono text-4xl"> Kontakt</h1>
@@ -100,7 +100,7 @@
 
 
     <footer>
-        <div class="w-full max-h-20">
+        <div class="w-full max-h-20 mt-auto">
             {{--            <h1 class="text-center">Site under construction</h1>--}}
             @include('Layouts.footer')
         </div>

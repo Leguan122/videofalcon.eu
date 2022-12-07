@@ -24,7 +24,7 @@
         </div>
     </header>
 
-    <video class="hidden sm:block w-full " autoplay preload="true">
+    <video class="hidden sm:block w-full" muted autoplay loop>
         <source src="{{ url('Video/Intro.mp4') }}" type="video/mp4">
         <source src="movie.ogg" type="video/ogg">
         Your browser does not support the video tag.
