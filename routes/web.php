@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 Route::get('/email',[Controller::class, 'email']);
 
-Route::get('/',[Controller::class, 'references']);
+Route::get('/',[Controller::class, 'welcome']);
 Route::get('/references', [Controller::class, 'references']);
 Route::get('/catalog', [Controller::class, 'catalog']);
 Route::get('/aboutme', [Controller::class, 'aboutme']);

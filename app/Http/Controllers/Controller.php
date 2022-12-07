@@ -12,9 +12,12 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use TimeHunter\LaravelGoogleReCaptchaV3\GoogleReCaptchaV3;
 
+
 class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
+
+
 
     public function aboutme() {
         return view('aboutme');
@@ -38,7 +41,6 @@ class Controller extends BaseController
     }
 
     public function references() {
-        $videos = Video_url::all();
         $videos = [
             ["https://www.youtube.com/embed/3R4NcDzF1NQ", "Janka & Martin"],
             ["https://www.youtube.com/embed/LJwszlzvErU", "Katka & Michal"],
@@ -46,11 +48,8 @@ class Controller extends BaseController
             ["https://www.youtube.com/embed/V9yJnW349rE", "Vianočná výzdoba"],
             ["https://www.youtube.com/embed/-IgK7736TK8", "Svadobný zostrih z Budatína"],
             ["https://www.youtube.com/embed/46wBz69H4z8", "Ľudka a Rastík"]
-
         ];
-//        dd($videos);
-//        return view('welcome')->with($videos);
-        return view('welcome',['videos' => $videos]);
+        return view('references',['videos' => $videos]);
     }
 
     public function sendingMsg(Request $request) {
@@ -59,5 +58,9 @@ class Controller extends BaseController
 //        ->cc('leguan25@gmail.com')
         ->send(new contactForm($request));
         return view('contact');
+    }
+
+    public function welcome() {
+        return view('welcome');
     }
 }
