@@ -40,8 +40,18 @@
                 <div class="p-8">
                     <div class="uppercase tracking-wide text-sm text-white font-semibold">O mne</div>
                     <p class="mt-2 text-white">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquam nisi tellus, vitae facilisis erat sollicitudin vel. Duis id eleifend sem. Maecenas ut hendrerit augue. Fusce eu ex ut nulla vehicula scelerisque ut ac libero. Pellentesque congue vehicula lacus. Donec dolor nisi, lacinia eu velit commodo, fringilla sagittis est. Fusce posuere laoreet enim ac placerat. In pulvinar mollis massa sodales eleifend. In suscipit dolor diam, vel malesuada quam malesuada id. Mauris ut dolor ac sapien semper mollis. Suspendisse lacus purus, condimentum et libero sit amet, commodo suscipit tellus. Nunc consequat lacus ac augue dignissim, eu lacinia justo congue. Duis ac erat ipsum. Sed ut orci nulla.
-                    </p>
+                        Volám sa Milan Jánoš a mám 28 rokov. Som kameraman a tejto profesii sa venujem už 9 rokov.
+                        Začal som na strednej odbornej škole s odborom grafik digitálnych médií. Popri VŠ na žurnalistike
+                        som začal filmovať svadby, birmovky, 1.sväté
+                        prijímania a iné akcie. Na VŠ som bol aktívny v školskej telvevízii Unica.
+                        Postupne som začal pracovať pre Tv Lux, v ktorej pracujem doteraz.
+                        Som zamestnaný ako kameraman a strihač.
+                        Vďaka tomu som natočil a zostrihal niekoľko desiatok dokumentov. Nie vždy točím sám,
+                        niekedy točíme spolu s manželkou.
+                        Veľmi nás táto práca baví a napĺňa. Preto budeme veľmi radi, ak si nás vyberiete,
+                        vďaka čomu
+                        môžeme zachytiť vašu
+                        špeciálnu udalosť, presne podľa vašich predstáv.                     </p>
                 </div>
             </div>
         </div>
