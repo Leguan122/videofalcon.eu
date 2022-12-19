@@ -82,7 +82,7 @@
                                 <div class="w-full lg:w-1/2">
                                     <div class="flex flex-col w-full lg:w-11/12 pb-4">
 {{--                                        <label id="warn_name" class="invisible text-red-600 text-sm break-keep" for="input_name"> *Meno nesmie byť prázdne</label>--}}
-                                        <input id="input_name" class="w-full p-1 bg-modern-bg text-white border h-12" type="text" name="name" placeholder="Meno *">
+                                        <input id="input_name" class="w-full p-1 bg-stone-900 text-white border h-12" type="text" name="name" placeholder="Meno *">
                                     </div>
 
                                     <div class="flex flex-col w-full lg:w-11/12 pb-4">
