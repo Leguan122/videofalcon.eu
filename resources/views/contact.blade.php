@@ -80,25 +80,25 @@
                             @csrf
                             <div class="flex flex-col lg:flex-row justify-between">
                                 <div class="w-full lg:w-1/2">
-                                    <div class="flex flex-col w-full lg:w-11/12 pb-4">
+                                    <div class="flex flex-col w-full lg:w-11/12 pb-4 lg:pb-14">
 {{--                                        <label id="warn_name" class="invisible text-red-600 text-sm break-keep" for="input_name"> *Meno nesmie byť prázdne</label>--}}
                                         <input id="input_name" class="w-full p-1 bg-stone-900 text-white border h-12" type="text" name="name" placeholder="Meno *">
                                     </div>
 
-                                    <div class="flex flex-col w-full lg:w-11/12 pb-4">
+                                    <div class="flex flex-col w-full lg:w-11/12 pb-4 lg:pb-14">
 {{--                                        <label id="warn_email" class="invisible text-red-600 text-sm" for="input_email"> *Email nesmie byť prázdny</label>--}}
-                                        <input id="input_email" class="w-full p-1 bg-modern-bg text-white border h-12" type="email" name="email" placeholder="Email *">
+                                        <input id="input_email" class="w-full p-1 bg-stone-900 text-white border h-12" type="email" name="email" placeholder="Email *">
                                     </div>
 
                                     <div class="flex flex-col w-full lg:w-11/12 pb-4">
 {{--                                        <label id="warn_email" class="invisible text-red-600 text-sm" for="input_email"> *Email nesmie byť prázdny</label>--}}
-                                        <input id="input_email" class="w-full p-1 bg-modern-bg text-white border h-12" type="email" name="email" placeholder="Dátum točenia *">
+                                        <input id="input_date" class="w-full p-1 bg-stone-900 border h-12 text-white" type="date" name="date" placeholder="Dátum točenia *" style="color-scheme: dark;">
                                     </div>
                                 </div>
 
                                 <div class="w-full lg:w-1/2 min-h-fit pb-4">
 {{--                                    <label id="warn_msg" class="invisible text-red-600 text-sm" for="input_msg"> *Správa nesmie byť prázdna</label>--}}
-                                    <textarea id="input_msg" class="w-full min-h-full p-1 bg-modern-bg text-white border" placeholder="Napíšte mi viac o projekte *" name="msg"></textarea><br>
+                                    <textarea id="input_msg" class="w-full min-h-full h-60 p-1 bg-stone-900 text-white border resize-none" placeholder="Napíšte mi viac o projekte *" name="msg"></textarea><br>
                                 </div>
 
                             </div>
