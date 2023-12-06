@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Falcon video production. Vytvorím Vám svadobný klip, svadobné video, prípadne reklamu. Mesto kde žijem je Banská Bystrica. Na tejto stránke sú moje referencie">
+        <meta name="description" content="Zabezpečte si nezabudnuteľné chvíle na vašich osobných a spoločenských udalostiach s naším talentovaným svadobným kameramanom. Ponúkame profesionálnu videoprodukciu pre svadby, rodinné oslavy a ďalšie špeciálne okamihy. Oživte svoje spomienky s kvalitným videom od nás.">
 
         <link rel="apple-touch-icon" sizes="180x180" href="{{ url('favicon.png') }}">
         <link rel="shortcut icon" href="{{ url('favicon.ico') }}" type="image/x-icon">
@@ -17,7 +17,11 @@
         @vite('resources/js/menu.js')
 
         <title>Falcon video production</title>
+
+
     </head>
+
+
 
 
     <body class="bg-stone-900 font-nunito">
@@ -28,20 +32,21 @@
         </div>
     </header>
 
-    <video class="hidden sm:block  min-h-screen aspect-video" muted autoplay loop>
+    <video class="hidden sm:block mt-0 pt-0" muted autoplay loop>
         <source src="{{ url('Video/Intro.mp4') }}" type="video/mp4">
         <source src="movie.ogg" type="video/ogg">
         Your browser does not support the video tag.
     </video>
 
-    <div class=" flex flex-col items-center">
+    <div class=" flex flex-col items-center mt-6">
         <h2 class="text-white text-center text-4xl sm:text-6xl font-bold pt-10 sm:pt-0 pb-10">MOJE SLUŽBY</h2>
         <div>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 justify-items-center mb-20">
 
                 <div class="flex flex-row sm:flex-col items-center sm:m-8 py-2 w-72 sm:w-56 h-32 sm:h-52">
                     <div class="border-slate-50 border rounded-full sm:p-4 sm:mb-6">
-                        <svg class="scale-50 sm:scale-100" xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" viewBox="0 0 32 32"><g fill="white"><path d="M10 4h.5c.28 0 .5.23.5.5c0 .28-.22.5-.5.5H10v2.077c.157.05.309.124.449.223l6.182 4.414a.872.872 0 1 1-1.009 1.418L15 12.69V16h13.296c.487 0 .933.289 1.116.738l.538 1.315a.692.692 0 0 1-.65.947H29v11H4V12.696l-.612.437c-.57.42-1.378 0-1.388-.71c0-.279.14-.549.37-.709L8.55 7.3A1.65 1.65 0 0 1 9 7.077V5h-.5c-.28 0-.5-.22-.5-.5s.22-.5.5-.5H9v-.5c0-.28.22-.5.5-.5s.5.22.5.5V4Zm-.5 14c1.379 0 2.5-1.111 2.5-2.5c0-1.379-1.121-2.5-2.5-2.5A2.502 2.502 0 0 0 7 15.5C7 16.879 8.121 18 9.5 18Zm8.51 9h3v-4.5c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5V27ZM13 29v-3.5c0-1.93-1.57-3.5-3.5-3.5S6 23.57 6 25.5V29h7Zm10.01-6.5V27h3v-4.5c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5Z"/><path d="M26.01 9.79v.04c0 .56-.17 1.09-.46 1.52c-.72 1-1.63 1.87-2.67 2.55c-.11.07-.24.1-.37.1s-.26-.03-.37-.1c-1.04-.68-1.95-1.55-2.67-2.55c-.29-.43-.46-.96-.46-1.52v-.04c.01-1 .81-1.79 1.8-1.79c.14 0 .29.02.42.06c.5.1.92.42 1.16.85c.03.05.07.07.12.07c.05 0 .09-.02.12-.07c.24-.43.66-.75 1.16-.85c.13-.04.28-.06.42-.06c.99 0 1.79.79 1.8 1.79Z"/></g></svg>                    </div>
+                        <svg class="scale-50 sm:scale-100" xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" viewBox="0 0 32 32"><g fill="white"><path d="M10 4h.5c.28 0 .5.23.5.5c0 .28-.22.5-.5.5H10v2.077c.157.05.309.124.449.223l6.182 4.414a.872.872 0 1 1-1.009 1.418L15 12.69V16h13.296c.487 0 .933.289 1.116.738l.538 1.315a.692.692 0 0 1-.65.947H29v11H4V12.696l-.612.437c-.57.42-1.378 0-1.388-.71c0-.279.14-.549.37-.709L8.55 7.3A1.65 1.65 0 0 1 9 7.077V5h-.5c-.28 0-.5-.22-.5-.5s.22-.5.5-.5H9v-.5c0-.28.22-.5.5-.5s.5.22.5.5V4Zm-.5 14c1.379 0 2.5-1.111 2.5-2.5c0-1.379-1.121-2.5-2.5-2.5A2.502 2.502 0 0 0 7 15.5C7 16.879 8.121 18 9.5 18Zm8.51 9h3v-4.5c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5V27ZM13 29v-3.5c0-1.93-1.57-3.5-3.5-3.5S6 23.57 6 25.5V29h7Zm10.01-6.5V27h3v-4.5c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5Z"/><path d="M26.01 9.79v.04c0 .56-.17 1.09-.46 1.52c-.72 1-1.63 1.87-2.67 2.55c-.11.07-.24.1-.37.1s-.26-.03-.37-.1c-1.04-.68-1.95-1.55-2.67-2.55c-.29-.43-.46-.96-.46-1.52v-.04c.01-1 .81-1.79 1.8-1.79c.14 0 .29.02.42.06c.5.1.92.42 1.16.85c.03.05.07.07.12.07c.05 0 .09-.02.12-.07c.24-.43.66-.75 1.16-.85c.13-.04.28-.06.42-.06c.99 0 1.79.79 1.8 1.79Z"/></g></svg>
+                    </div>
                     <div class="w-full">
                         <p class="text-white text-center text-xl sm:text-2xl font-bold"> Svadby</p>
                     </div>
@@ -77,8 +82,6 @@
             </div>
         </div>
     </div>
-
-
         <footer>
             <div class="w-full max-h-20">
                 {{--            <h1 class="text-center">Site under construction</h1>--}}
