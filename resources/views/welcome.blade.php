@@ -8,9 +8,10 @@
         <link rel="apple-touch-icon" sizes="180x180" href="{{ url('favicon.png') }}">
         <link rel="shortcut icon" href="{{ url('favicon.ico') }}" type="image/x-icon">
 
-        <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+{{--        <link href='https://fonts.googleapis.com/css?family=Nunito&display=swap' rel='stylesheet'>--}}
+        <link href='https://fonts.googleapis.com/css?family=Nunito:400,700,800,900&display=swap' rel='stylesheet'>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js" defer></script>
 
         @vite('resources/css/app.css')
 
