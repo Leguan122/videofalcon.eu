@@ -32,9 +32,9 @@
     <div class="md:m-8 py-8 w-full-[16] min-h-screen bg-stone-800  rounded-lg">
         <div class="w-full h-full grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 place-items-center">
             @foreach($videos as $video)
-                <div class="bg-black rounded-lg m-4 shadow-md shadow-white hover:shadow-xl hover:shadow-white duration-150 hover:scale-110">
+                <div class="bg-black rounded-lg m-4 shadow-sm shadow-white hover:shadow-md hover:shadow-white duration-150 hover:scale-105">
                     <button id="{{$video[0]}}" class="show_video">
-                        <img src="{{ url('Image/JankaMartin.webp') }}" alt="=Uvodný obrázok videa: {{$video[1]}}">
+                        <img src="{{ url('Image/JankaMartin.webp') }}" alt="=Uvodný obrázok videa: {{$video[1]}}" class="rounded-lg">
                         <p class="text-white text-center">{{$video[1]}}</p>
                 </button>
                 </div>

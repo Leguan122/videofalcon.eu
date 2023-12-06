@@ -99,7 +99,7 @@
 
                                 <div class="w-full lg:w-1/2 min-h-fit pb-4">
 {{--                                    <label id="warn_msg" class="invisible text-red-600 text-sm" for="input_msg"> *Správa nesmie byť prázdna</label>--}}
-                                    <textarea id="input_msg" class="w-full min-h-full h-60 p-1 bg-stone-900 text-white border resize-none" placeholder="Napíšte mi viac o projekte *" name="msg"></textarea><br>
+                                    <textarea id="input_msg" class="w-full min-h-full h-60 p-1 bg-stone-900 text-white border resize-none" placeholder="Napíšte mi viac o Vašej akcií *" name="msg"></textarea><br>
                                 </div>
 
                             </div>
