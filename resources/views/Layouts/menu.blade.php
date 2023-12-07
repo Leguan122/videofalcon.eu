@@ -2,7 +2,7 @@
     <div class="flex items-center justify-center lg:ml-16">
         <a href="/" class="">
             <img src="{{ url('Image/background16-9.webp') }}" class="hidden sm:block ml-3 h-16 mr-32" alt="Firemné logo Falcon video production s názvom 'FALCON' a hlavou orla">
-            <img src="{{ url('Image/logo.webp') }}" class="block sm:hidden ml-3" alt="Firemné logo Falcon video production. Hlava orla">
+            <img src="{{ url('Image/logo.webp') }}" class="block sm:hidden ml-3" alt="Firemné logo Falcon video production. Hlava orla" width="60">
 {{--            <p class="absolute">esfsefsefse</p>--}}
         </a>
     </div>
