@@ -72,50 +72,79 @@
                 </div>
             </div>
 
-            <div class="w-11/12 rounded-lg place-self-center p-8">
+{{--            <div class="w-11/12 rounded-lg place-self-center p-8">--}}
 {{--                <div class="grid grid-cols-1 md:grid-cols-2">--}}
-                    <div class="border p-4">
+{{--                    <div class="border p-4">--}}
 
 
-                        <form id="msg-form" action="/contact" method="post">
-                            @csrf
-                            <div class="flex flex-col lg:flex-row justify-between">
-                                <div class="w-full lg:w-1/2">
-                                    <div class="flex flex-col w-full lg:w-11/12 pb-4 lg:pb-14">
+{{--                        <form id="msg-form" action="/contact" method="post">--}}
+{{--                            @csrf--}}
+{{--                            <div class="flex flex-col lg:flex-row justify-between">--}}
+{{--                                <div class="w-full lg:w-1/2">--}}
+{{--                                    <div class="flex flex-col w-full lg:w-11/12 pb-4 lg:pb-14">--}}
 {{--                                        <label id="warn_name" class="invisible text-red-600 text-sm break-keep" for="input_name"> *Meno nesmie byť prázdne</label>--}}
-                                        <input id="input_name" class="w-full p-1 bg-stone-900 text-white border h-12" type="text" name="name" placeholder="Meno *">
-                                    </div>
+{{--                                        <input id="input_name" class="w-full p-1 bg-stone-900 text-white border h-12" type="text" name="name" placeholder="Meno *">--}}
+{{--                                    </div>--}}
 
-                                    <div class="flex flex-col w-full lg:w-11/12 pb-4 lg:pb-14">
+{{--                                    <div class="flex flex-col w-full lg:w-11/12 pb-4 lg:pb-14">--}}
 {{--                                        <label id="warn_email" class="invisible text-red-600 text-sm" for="input_email"> *Email nesmie byť prázdny</label>--}}
-                                        <input id="input_email" class="w-full p-1 bg-stone-900 text-white border h-12" type="email" name="email" placeholder="Email *">
-                                    </div>
+{{--                                        <input id="input_email" class="w-full p-1 bg-stone-900 text-white border h-12" type="email" name="email" placeholder="Email *">--}}
+{{--                                    </div>--}}
 
-                                    <div class="flex flex-col w-full lg:w-11/12 pb-4">
+{{--                                    <div class="flex flex-col w-full lg:w-11/12 pb-4">--}}
 {{--                                        <label id="warn_email" class="invisible text-red-600 text-sm" for="input_email"> *Email nesmie byť prázdny</label>--}}
-                                        <input id="input_date" class="w-full p-1 bg-stone-900 border h-12 text-white" type="date" name="date" placeholder="Dátum točenia *" style="color-scheme: dark;">
-                                    </div>
-                                </div>
+{{--                                        <input id="input_date" class="w-full p-1 bg-stone-900 border h-12 text-white" type="date" name="date" placeholder="Dátum točenia *" style="color-scheme: dark;">--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
 
-                                <div class="w-full lg:w-1/2 min-h-fit pb-4">
+{{--                                <div class="w-full lg:w-1/2 min-h-fit pb-4">--}}
 {{--                                    <label id="warn_msg" class="invisible text-red-600 text-sm" for="input_msg"> *Správa nesmie byť prázdna</label>--}}
-                                    <textarea id="input_msg" class="w-full min-h-full h-60 p-1 bg-stone-900 text-white border resize-none" placeholder="Napíšte mi viac o Vašej akcií *" name="msg"></textarea><br>
-                                </div>
+{{--                                    <textarea id="input_msg" class="w-full min-h-full h-60 p-1 bg-stone-900 text-white border resize-none" placeholder="Napíšte mi viac o Vašej akcií *" name="msg"></textarea><br>--}}
+{{--                                </div>--}}
 
-                            </div>
-                            <div  class="flex flex-row-reverse">
+{{--                            </div>--}}
+{{--                            <div  class="flex flex-row-reverse">--}}
 
-                                    <button id="sendMsg" class="g-recaptcha bg-black p-1 hover:bg-slate-200 hover:text-black min-w-[100px] h-12 text-white border" data-sitekey="6LfBjkkjAAAAALOq-MFLU6gwBA1BReKFJ8AAC9DG"
-                                            data-callback='onSubmit'
-                                            data-action='submit'
-                                            data-error-callback='captchaError' >Odoslať </button>
+{{--                                    <button id="sendMsg" class="g-recaptcha bg-black p-1 hover:bg-slate-200 hover:text-black min-w-[100px] h-12 text-white border" data-sitekey="6LfBjkkjAAAAALOq-MFLU6gwBA1BReKFJ8AAC9DG"--}}
+{{--                                            data-callback='onSubmit'--}}
+{{--                                            data-action='submit'--}}
+{{--                                            data-error-callback='captchaError' >Odoslať </button>--}}
 
-                            </div>
+{{--                            </div>--}}
 
 
-                        </form>
-                    </div>
+{{--                        </form>--}}
+
+{{--                        sefewbfsef--}}
+
+{{--                    </div>--}}
 {{--                </div>--}}
+{{--            </div>--}}
+
+            <div class="flex items-center justify-start text-white mx-1">
+                <div class="mx-auto w-full max-w-lg">
+                    <h1 class="text-4xl font-medium">Kontaktný formulár</h1>
+                    <p class="mt-3">Napíšte mi na videofalco@gmail.com alebo tu na formulár:</p>
+
+                    <form action="/contact" method="post" class="mt-10">
+                        @csrf
+                        <div class="grid gap-6 sm:grid-cols-2">
+                            <div class="relative z-0">
+                                <input id="input_name" type="text" name="name" class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-white focus:border-blue-600 focus:outline-none focus:ring-0" placeholder=" " />
+                                <label class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Meno</label>
+                            </div>
+                            <div class="relative z-0">
+                                <input id="input_email" type="text" name="email" class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-white focus:border-blue-600 focus:outline-none focus:ring-0" placeholder=" " />
+                                <label class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Email</label>
+                            </div>
+                            <div class="relative z-0 col-span-2">
+                                <textarea id="input_msg" name="msg" rows="5" class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-white focus:border-blue-600 focus:outline-none focus:ring-0" placeholder=" "></textarea>
+                                <label class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Správa</label>
+                            </div>
+                        </div>
+                        <button type="submit" class="mt-5 rounded-md bg-black px-10 py-2 text-white">Odoslať správu</button>
+                    </form>
+                </div>
             </div>
 
         </div>

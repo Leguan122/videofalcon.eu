@@ -35,8 +35,8 @@ class contactForm extends Mailable
     public function envelope()
     {
         return new Envelope(
-            from: new Address('form@videofalcon.eu', 'App'),
-            subject: 'Contact Form',
+            from: new Address('form@videofalcon.eu', 'videofalcon.eu'),
+            subject: 'Kontaktný formulár',
         );
     }
 

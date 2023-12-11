@@ -14,35 +14,38 @@
 
 <body class="bg-stone-900">
 
-<h1>Kontaktny formular</h1>
+<h1>Objednávka z videofalcon.eu</h1>
 
 <h2>
-    Autor: {{$request->name}}
+    Odosielateľ: {{$request->name}}
 </h2>
+<p>
+    {{$request->email}}
+</p>
 
 <div>
-    <h3>Sprava:</h3>
+    <h3>Správa:</h3>
     <p>
         {{$request->msg}}
     </p>
 </div>
 
-<div>
-    <h4>
-        Od:
-    </h4>
-    <p>
-        {{$request->email}}
-    </p>
-</div>
+{{--<div>--}}
+{{--    <h4>--}}
+{{--        Od:--}}
+{{--    </h4>--}}
+{{--    <p>--}}
+{{--        {{$request->email}}--}}
+{{--    </p>--}}
+{{--</div>--}}
 
 
-<footer>
-    <div class="w-full max-h-20">
-        {{--            <h1 class="text-center">Site under construction</h1>--}}
-        @include('Layouts.footer')
-    </div>
-</footer>
+{{--<footer>--}}
+{{--    <div class="w-full max-h-20">--}}
+{{--        --}}{{--            <h1 class="text-center">Site under construction</h1>--}}
+{{--        @include('Layouts.footer')--}}
+{{--    </div>--}}
+{{--</footer>--}}
 </body>
 
 

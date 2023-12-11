@@ -40,9 +40,9 @@
     </video>
 
     <div class=" flex flex-col items-center mt-6">
-        <h2 class="text-white text-center text-4xl sm:text-6xl font-bold pt-10 sm:pt-0 pb-10">MOJE SLUŽBY</h2>
+        <h2 class="text-white text-center text-4xl sm:text-6xl font-bold pt-10">MOJE SLUŽBY</h2>
         <div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 justify-items-center mb-20">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 justify-items-center mb-20">
 
                 <div class="flex flex-row sm:flex-col items-center sm:m-8 py-2 w-72 sm:w-56 h-32 sm:h-52">
                     <div class="border-slate-50 border rounded-full sm:p-4 sm:mb-6">
