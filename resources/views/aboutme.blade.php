@@ -21,24 +21,24 @@
 
         <title>Falcon video production</title>
     </head>
-
-
     <body class="bg-stone-900 font-nunito">
         <header>
-            <div class="w-full h-16 absolute">
+            <div class="w-full h-16">
                 {{--            <h1 class="text-center">Site under construction</h1>--}}
                 @include('Layouts.menu')
             </div>
         </header>
-
-    <div class=" min-h-[calc(100vh-24px)] grid place-items-center">
-        <div class="max-w-md mx-auto bg-stone-800 rounded-xl shadow-md overflow-hidden md:max-w-2xl mt-24">
+    <div class=" min-h-[calc(100vh-20px)] ">
+        <div class="my-2 sm:my-20">
+            <h1 class="text-white text-center text-4xl"> O mne </h1>
+        </div>
+        <div class="mx-2 sm:mx-40 bg-stone-800 overflow-hidden ">
             <div class="md:flex">
                 <div class="md:shrink-0">
-                    <img class="h-48 w-full object-cover md:h-full md:w-48" src="{{ url('Image/profilovka.webp') }}" alt="Profile photo">
+                    <img class="h-48 w-full object-cover md:h-full md:h-100" src="{{ url('Image/profilovka.webp') }}" alt="Profile photo">
                 </div>
                 <div class="p-8">
-                    <div class="uppercase tracking-wide text-sm text-white font-semibold">O mne</div>
+{{--                    <div class="uppercase tracking-wide text-sm text-white font-semibold">O mne</div>--}}
                     <p class="mt-2 text-white">
                         Volám sa Milan Jánoš a mám 28 rokov. Som kameraman a tejto profesii sa venujem už 9 rokov.
                         Začal som na strednej odbornej škole s odborom grafik digitálnych médií. Popri VŠ na žurnalistike

@@ -33,11 +33,10 @@
     </header>
     <div class="min-h-[calc(100vh-24px)]">
         <div class="flex flex-col py-20">
-            <div class="mb-20">
-                <h1 class="text-white text-center font-mono text-4xl"> Kontakt</h1>
+            <div class="my-2 sm:my-20">
+                <h1 class="text-white text-center text-4xl"> Kontakt</h1>
             </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 justify-items-center mb-20">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 justify-items-center mb-20 mx-20">
                 <div class="flex flex-row sm:flex-col items-center sm:m-8 py-2 rounded w-72 sm:w-56 h-32 sm:h-52">
                     <div class="border-slate-50 border rounded-full p-4 sm:mb-6">
                         <svg class="" xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="white" d="M10 20h4v-1h-4Zm-3 3q-.825 0-1.412-.587Q5 21.825 5 21V3q0-.825.588-1.413Q6.175 1 7 1h10q.825 0 1.413.587Q19 2.175 19 3v18q0 .825-.587 1.413Q17.825 23 17 23Zm0-7h10V6H7Z"/></svg>
@@ -121,9 +120,9 @@
 {{--                </div>--}}
 {{--            </div>--}}
 
-            <div class="flex items-center justify-start text-white mx-1">
+            <div class="flex items-center justify-start text-white mx-2">
                 <div class="mx-auto w-full max-w-lg">
-                    <h1 class="text-4xl font-medium">Kontaktný formulár</h1>
+                    <h2 class="text-4xl font-medium text-left">Kontaktný formulár</h2>
                     <p class="mt-3">Napíšte mi na videofalco@gmail.com alebo tu na formulár:</p>
 
                     <form action="/contact" method="post" class="mt-10">
@@ -142,7 +141,11 @@
                                 <label class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Správa</label>
                             </div>
                         </div>
-                        <button type="submit" class="mt-5 rounded-md bg-black px-10 py-2 text-white">Odoslať správu</button>
+{{--                        <button type="submit" class="mt-5 rounded-md bg-black px-10 py-2 text-white">Odoslať správu</button>--}}
+                        <div  class="flex flex-row-reverse mt-5">
+                          <button id="sendMsg" class="g-recaptcha hover:bg-gold hover:text-black px-4 py-1 text-white border border-gray-500" data-sitekey="6LfBjkkjAAAAALOq-MFLU6gwBA1BReKFJ8AAC9DG"
+                                  data-callback='onSubmit' data-action='submit' data-error-callback='captchaError' >Odoslať </button>
+                        </div>
                     </form>
                 </div>
             </div>

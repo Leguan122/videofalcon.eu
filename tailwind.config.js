@@ -8,6 +8,7 @@ module.exports = {
   theme: {
     extend: {
         colors: {
+            'gold':         '#f9a825',
             'modern-black': '#181c21',
             'modern-bg':    '#525f70'
         },

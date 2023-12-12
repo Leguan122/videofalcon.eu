@@ -34,10 +34,10 @@
 
     <div class="hidden sm:block lg:mr-16 font-bold">
         <ul class="flex flex-row text-white h-full mr-3">
-            <li class="mx-2 flex items-center justify-center "><a href="/references" class="transition ease-in delay-50 hover:-translate-y-0.5 hover:scale-110 duration-100 hover:text-zinc-200">Referencie</a></li>
+            <li class="mx-2 flex items-center justify-center "><a href="/references" class="transition ease-in delay-50 hover:-translate-y-0.5 hover:scale-110 duration-100 hover:text-gold">Referencie</a></li>
 {{--            <li class="mx-2 flex items-center justify-center "><a href="/catalog" class="transition ease-in delay-50 hover:-translate-y-0.5 hover:scale-110 duration-100 hover:text-zinc-200">Služby</a></li>--}}
-            <li class="mx-2 flex items-center justify-center whitespace-nowrap"><a href="/aboutme" class="transition ease-in delay-50 hover:-translate-y-0.5 hover:scale-110 duration-100 hover:text-zinc-200">O mne</a></li>
-            <li class="mx-2 flex items-center justify-center"><a href="/contact" class="transition ease-in delay-50 hover:-translate-y-0.5 hover:scale-110 duration-100 hover:text-zinc-200">Kontakt</a></li>
+            <li class="mx-2 flex items-center justify-center whitespace-nowrap"><a href="/aboutme" class="transition ease-in delay-50 hover:-translate-y-0.5 hover:scale-110 duration-100 hover:text-gold">O mne</a></li>
+            <li class="mx-2 flex items-center justify-center"><a href="/contact" class="transition ease-in delay-50 hover:-translate-y-0.5 hover:scale-110 duration-100 hover:text-gold">Kontakt</a></li>
         </ul>
     </div>
 

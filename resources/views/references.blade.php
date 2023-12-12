@@ -27,12 +27,13 @@
             @include('Layouts.menu')
         </div>
     </header>
-
-
-    <div class="md:m-8 py-8 w-full-[16] min-h-screen bg-stone-800  rounded-lg">
+    <div class="my-2 sm:my-20">
+        <h1 class="text-white text-center text-4xl"> Video referencie</h1>
+    </div>
+    <div class="min-h-screen">
         <div class="w-full h-full grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 place-items-center">
             @foreach($videos as $video)
-                <div class="bg-black rounded-lg m-4 shadow-sm shadow-white hover:shadow-md hover:shadow-white duration-150 hover:scale-105">
+                <div class="bg-black rounded-lg m-4 shadow-sm shadow-white hover:shadow-md hover:shadow-gold duration-150 hover:scale-105">
                     <button id="{{$video[0]}}" class="show_video">
                         <img src="{{ url('Image/JankaMartin.webp') }}" alt="=Uvodný obrázok videa: {{$video[1]}}" class="rounded-lg">
                         <p class="text-white text-center">{{$video[1]}}</p>
