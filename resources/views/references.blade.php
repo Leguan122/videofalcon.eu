@@ -33,11 +33,17 @@
     <div class="min-h-screen">
         <div class="w-full h-full grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 place-items-center">
             @foreach($videos as $video)
-                <div class="bg-black rounded-lg m-4 shadow-sm shadow-white hover:shadow-md hover:shadow-gold duration-150 hover:scale-105">
+                <div class="relative bg-black rounded-lg m-4 shadow-sm shadow-white ">
                     <button id="{{$video[0]}}" class="show_video">
-                        <img src="{{ url('Image/JankaMartin.webp') }}" alt="=Uvodný obrázok videa: {{$video[1]}}" class="rounded-lg">
+{{--                        <img src="{{ $video[2] ?? url('Image/Thumbs/KatkaMichal.webp') }}" alt="=Uvodný obrázok videa: {{$video[1]}}" class="rounded-lg">--}}
+                        <div class=" overflow-hidden">
+                            <img src="{{asset('Image/Thumbs').'/'. ($video[2] ?? 'KatkaMichal').'.webp'}}" alt="=Uvodný obrázok videa: {{$video[1]}}" class="hover:scale-105  duration-150">
+                        </div>
                         <p class="text-white text-center">{{$video[1]}}</p>
-                </button>
+                        <div class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 ">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72"><path fill="#ea5a47" d="M63.874 21.906a7.31 7.31 0 0 0-5.144-5.177C54.193 15.505 36 15.505 36 15.505s-18.193 0-22.73 1.224a7.31 7.31 0 0 0-5.144 5.177C6.91 26.472 6.91 36 6.91 36s0 9.528 1.216 14.095a7.31 7.31 0 0 0 5.144 5.177C17.807 56.495 36 56.495 36 56.495s18.193 0 22.73-1.223a7.31 7.31 0 0 0 5.144-5.177C65.09 45.528 65.09 36 65.09 36s0-9.528-1.216-14.094"/><path fill="#fff" d="M30.05 44.65L45.256 36L30.05 27.35Z"/><g fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="2"><path d="M63.874 21.906a7.31 7.31 0 0 0-5.144-5.177C54.193 15.505 36 15.505 36 15.505s-18.193 0-22.73 1.224a7.31 7.31 0 0 0-5.144 5.177C6.91 26.472 6.91 36 6.91 36s0 9.528 1.216 14.095a7.31 7.31 0 0 0 5.144 5.177C17.807 56.495 36 56.495 36 56.495s18.193 0 22.73-1.223a7.31 7.31 0 0 0 5.144-5.177C65.09 45.528 65.09 36 65.09 36s0-9.528-1.216-14.094"/><path stroke-linecap="round" stroke-linejoin="round" d="M30.05 44.65L45.256 36L30.05 27.35Z"/></g></svg>
+                        </div>
+                    </button>
                 </div>
             @endforeach
             {{--                            <iframe width="560" height="315" src="https://youtu.be/LJwszlzvErU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                    </div>--}}
