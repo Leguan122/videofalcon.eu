@@ -1,15 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Zabezpečte si nezabudnuteľné chvíle na vašich osobných a spoločenských udalostiach s naším talentovaným svadobným kameramanom. Ponúkame profesionálnu videoprodukciu pre svadby, rodinné oslavy a ďalšie špeciálne okamihy. Oživte svoje spomienky s kvalitným videom od nás.">
-
-        <link rel="apple-touch-icon" sizes="180x180" href="{{ url('favicon.png') }}">
-        <link rel="shortcut icon" href="{{ url('favicon.ico') }}" type="image/x-icon">
-
-{{--        <link href='https://fonts.googleapis.com/css?family=Nunito&display=swap' rel='stylesheet'>--}}
-        <link href='https://fonts.googleapis.com/css?family=Nunito:400,700,800,900&display=swap' rel='stylesheet'>
+        @include('Layouts.head')
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js" defer></script>
 
@@ -18,14 +10,13 @@
         @vite('resources/js/menu.js')
 
         <title>Falcon video production</title>
-
-
     </head>
 
-
-
-
     <body class="bg-stone-900 font-nunito">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5ZCFSXNB"
+                      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <h1 class="absolute w-full h-max text-right text-white">Falcon kameraman</h1>
     <header>
         <div class="min-w-full h-16 ">

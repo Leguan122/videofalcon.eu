@@ -1,15 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <link rel="apple-touch-icon" sizes="180x180" href="{{ url('favicon.png') }}">
-        <link rel="shortcut icon" href="{{ url('favicon.ico') }}" type="image/x-icon">
-
-{{--        <link href='https://fonts.googleapis.com/css?family=Nunito&display=swap' rel='stylesheet'>--}}
-        <link href='https://fonts.googleapis.com/css?family=Nunito:400,700,800,900&display=swap' rel='stylesheet'>
-
+        @include('Layouts.head')
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js" defer></script>
 
@@ -22,6 +14,10 @@
 
 
     <body class="bg-stone-900 font-nunito">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5ZCFSXNB"
+                      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
         <header>
             <div class="w-full h-16 absolute">
                 {{--            <h1 class="text-center">Site under construction</h1>--}}
