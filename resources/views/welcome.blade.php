@@ -26,6 +26,7 @@
 
 
     <body class="bg-stone-900 font-nunito">
+    <h1 class="absolute w-full h-max text-right text-white">Falcon kameraman</h1>
     <header>
         <div class="min-w-full h-16 ">
             {{--            <h1 class="text-center">Site under construction</h1>--}}
@@ -33,11 +34,16 @@
         </div>
     </header>
 
-    <video class="hidden sm:block mt-0 pt-0" muted autoplay loop>
-        <source src="{{ url('Video/Intro.mp4') }}" type="video/mp4">
-        <source src="movie.ogg" type="video/ogg">
-        Your browser does not support the video tag.
-    </video>
+    <div>
+
+        <video class="hidden sm:block mt-0 pt-0" muted autoplay loop>
+            <source src="{{ url('Video/Intro.mp4') }}" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+
 
     <div class=" flex flex-col items-center mt-6">
         <h2 class="text-white text-center text-4xl sm:text-6xl font-bold pt-10">MOJE SLUŽBY</h2>
