@@ -8,7 +8,12 @@
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Zabezpečte si nezabudnuteľné chvíle na Vašich osobných a spoločenských udalostiach s falcon kameramanom. Ponúkam profesionálnu videoprodukciu pre svadby, rodinné oslavy a ďalšie špeciálne okamihy. Oživte svoje spomienky s kvalitným videom od falcon produkcie.">
+<meta name="description" content="Zabezpečte si nezabudnuteľné chvíle na Vašich osobných a spoločenských udalostiach s falcon kameramanom. Ponúkam profesionálnu videoprodukciu pre svadby, rodinné oslavy a ďalšie špeciálne okamihy. Oživte svoje spomienky s kvalitným videom.">
+
+<meta property="og:title" content="Falcon svadobný kameraman" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://videofalcon.eu/" />
+<meta property="og:image" content="https://videofalcon.eu/Image/profilovka.webp" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="{{ url('favicon.png') }}">
 <link rel="shortcut icon" href="{{ url('favicon.ico') }}" type="image/x-icon">

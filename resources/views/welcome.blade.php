@@ -38,7 +38,7 @@
 
     <div class=" flex flex-col items-center mt-6">
         <h2 class="text-white text-center text-4xl sm:text-6xl font-bold pt-10">MOJE SLUŽBY</h2>
-        <div>
+        <section>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 justify-items-center mb-20">
 
                 <div class="flex flex-row sm:flex-col items-center sm:m-8 py-2 w-72 sm:w-56 h-32 sm:h-52">
@@ -78,7 +78,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     </div>
         <footer>
             <div class="w-full max-h-20">
