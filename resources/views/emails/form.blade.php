@@ -17,14 +17,14 @@
 <h1>Objednávka z videofalcon.eu</h1>
 
 <h2>
-    Odosielateľ: {{$request->name}}
+    Meno odosielateľa: {{$request->name}}
 </h2>
-<p>
-    {{$request->email}}
-</p>
+<h3>
+    Kontakt na odosielateľa: {{$request->email}}
+</h3>
 
 <div>
-    <h3>Správa:</h3>
+    <h4>Správa:</h4>
     <p>
         {{$request->msg}}
     </p>

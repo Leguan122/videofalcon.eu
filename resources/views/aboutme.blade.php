@@ -29,7 +29,7 @@
         <div class="mx-2 sm:mx-40 bg-stone-800 overflow-hidden ">
             <div class="md:flex">
                 <div class="md:shrink-0">
-                    <img class="h-48 w-full object-cover md:h-full md:h-100" src="{{ url('Image/profilovka.webp') }}" alt="Profile photo">
+                    <img class="h-36 w-full object-cover md:h-full md:h-100" src="{{ url('Image/profilovka.webp') }}" alt="Profilová fotka">
                 </div>
                 <div class="p-8">
 {{--                    <div class="uppercase tracking-wide text-sm text-white font-semibold">O mne</div>--}}

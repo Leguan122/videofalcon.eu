@@ -5,7 +5,8 @@
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="https://www.google.com/recaptcha/api.js"></script>
+{{--    <script src="https://www.google.com/recaptcha/api.js"></script>--}}
+
 
     @vite('resources/css/app.css')
 
@@ -122,15 +123,15 @@
                     <h2 class="text-4xl font-medium text-left">Kontaktný formulár</h2>
                     <p class="mt-3">Napíšte mi na videofalco@gmail.com alebo tu na formulár:</p>
 
-                    <form action="/contact" method="post" class="mt-10">
+                    <form action="/contact" method="post" class="mt-10" id="msg-form">
                         @csrf
                         <div class="grid gap-6 sm:grid-cols-2">
                             <div class="relative z-0">
-                                <input id="input_name" type="text" name="name" class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-white focus:border-blue-600 focus:outline-none focus:ring-0" placeholder=" " />
+                                <input id="input_name" type="text" name="name" class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-white focus:border-blue-600 focus:outline-none focus:ring-0" placeholder=" " maxlength="30" />
                                 <label class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Meno</label>
                             </div>
                             <div class="relative z-0">
-                                <input id="input_email" type="text" name="email" class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-white focus:border-blue-600 focus:outline-none focus:ring-0" placeholder=" " />
+                                <input id="input_email" type="email" name="email" class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-white focus:border-blue-600 focus:outline-none focus:ring-0" placeholder=" " />
                                 <label class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Email</label>
                             </div>
                             <div class="relative z-0 col-span-2">

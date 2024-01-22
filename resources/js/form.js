@@ -3,6 +3,8 @@ window.captchaError = captchaError;
 
 function onSubmit(token) {
 
+    console.log("onSufsfesfbmit");
+
     if ($('#input_name').val() == "") {
         $("#warn_name").removeClass('invisible');
         alert("Meno je povinné");
