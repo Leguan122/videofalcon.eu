@@ -11,6 +11,7 @@ use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use TimeHunter\LaravelGoogleReCaptchaV3\GoogleReCaptchaV3;
+use App\Rules\ReCaptcha;
 
 
 class Controller extends BaseController
@@ -53,6 +54,15 @@ class Controller extends BaseController
     }
 
     public function sendingMsg(Request $request) {
+
+        $request->validate([
+
+            'name' => 'required',
+            'email' => 'required|email',
+            'msg' => 'required',
+            'g-recaptcha-response' => ['required', new ReCaptcha]
+
+        ]);
         dd($request);
         Mail::to('form@videofalcon.eu')
         ->cc('leguan25@gmail.com')
