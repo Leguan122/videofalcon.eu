@@ -53,7 +53,7 @@ class Controller extends BaseController
     }
 
     public function sendingMsg(Request $request) {
-//        dd($request);
+        dd($request);
         Mail::to('form@videofalcon.eu')
         ->cc('leguan25@gmail.com')
         ->send(new contactForm($request));

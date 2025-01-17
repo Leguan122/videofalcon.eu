@@ -3,7 +3,6 @@ window.captchaError = captchaError;
 
 function onSubmit(token) {
 
-    console.log("onSufsfesfbmit");
 
     if ($('#input_name').val() == "") {
         $("#warn_name").removeClass('invisible');
@@ -18,7 +17,7 @@ function onSubmit(token) {
         $("#warn_email").addClass('invisible');
     }
     if ($('#input_msg').val() == "") {
-        alert("Správa je povinná je povinná");
+        alert("Správa je povinná");
         $("#warn_msg").removeClass('invisible');
     }else {
         $("#warn_msg").addClass('invisible');

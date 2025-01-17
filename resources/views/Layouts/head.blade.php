@@ -6,7 +6,7 @@
     })(window,document,'script','dataLayer','GTM-5ZCFSXNB');</script>
 <!-- End Google Tag Manager -->
 
-<script src="https://www.google.com/recaptcha/api.js"></script>
+<script src="https://www.google.com/recaptcha/enterprise.js?render=6Lcz-LcqAAAAAD8fauGaU4Sbc___mDrrcXQcGzQI"></script>
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">

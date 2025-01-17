@@ -141,8 +141,11 @@
                         </div>
 {{--                        <button type="submit" class="mt-5 rounded-md bg-black px-10 py-2 text-white">Odoslať správu</button>--}}
                         <div  class="flex flex-row-reverse mt-5">
-                          <button id="sendMsg" class="g-recaptcha hover:bg-gold hover:text-black px-4 py-1 text-white border border-gray-500" data-sitekey="6LfBjkkjAAAAALOq-MFLU6gwBA1BReKFJ8AAC9DG"
-                                  data-callback='onSubmit' data-action='submit' data-error-callback='captchaError' >Odoslať </button>
+                          <button id="sendMsg" class="g-recaptcha hover:bg-gold hover:text-black px-4 py-1 text-white border border-gray-500" 
+                            data-sitekey="6Lcz-LcqAAAAAD8fauGaU4Sbc___mDrrcXQcGzQI"
+                            data-callback='onSubmit' 
+                            data-action='submit' 
+                            data-error-callback='captchaError' >Odoslať </button>
                         </div>
                     </form>
                 </div>
